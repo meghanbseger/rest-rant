@@ -1,14 +1,3 @@
-//Homepage Route
-const express = require('express')
-const app = express()
-
-app.get('/', (req, res) => {
-    res.send('Hello world!')
-})
-
-app.listen(process.env.PORT)
-
-
 //Wildcard Route (404 route)
 require('dotenv').config()
 const express = require('express')
@@ -25,4 +14,3 @@ app.get('*', (req, res) => {
 })
 
 app.listen(process.env.PORT)
-
